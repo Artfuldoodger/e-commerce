@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-main{
+    background-color: #479647;
+}
+.text-main{
+    color: #479647;
+}
+
+
+li{
+    text-decoration: none;
+}
+ul{
+    text-decoration: none;
+}
+.active{
+    color: black;
+}
+.navbar li:hover{
+    color: black;
+}
+.navbar li{
+    transition: all ease-in-out 0.3s;
+}
+
+
+.productcard .btn{
+    opacity: 0;
+    transition: transform 1s , opacity 1s;
+    transition: all ease-in-out 0.5s;
+    transform: translateY(100%);
+}
+.productcard:hover .btn{
+    opacity: 1;
+    transform: translateY(0%);
+}
